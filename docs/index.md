@@ -38,7 +38,7 @@ Como se mencionó anteriormente en este documento, la arquitectura escogida para
     - Escalabilidad: como es una aplicación modular, se puede escalar horizontalmente cada parte según sea necesario, aumentando el escalado de los módulos que tengan un procesamiento más intensivo.
     - Versatilidad: se pueden usar diferentes tecnologías y lenguajes de programación, lo que permite adaptar cada funcionalidad a la tecnología más adecuada y rentable.
     - Rapidez de actuación: el reducido tamaño de los microservicios permite un desarrollo menos costoso, así como el uso de “contenedores de software”, como Docker, permitiendo que el despliegue de la aplicación se pueda llevar a cabo rápidamente.
-    Mantenimiento simple y barato: al poder hacerse mejoras de un solo módulo y no tener que intervenir en toda la estructura, el mantenimiento es más sencillo y barato.
+    - Mantenimiento simple y barato: al poder hacerse mejoras de un solo módulo y no tener que intervenir en toda la estructura, el mantenimiento es más sencillo y barato.
     - Agilidad: se pueden utilizar funcionalidades típicas (autenticación, trazabilidad, etc.) que ya han sido desarrolladas por terceros, por lo que no hace falta o no es necesario que se tengan que crear, un ejemplo de ello para este proyecto es el uso de dashboard para presentar estadísticas.
 ```
 ## Desventajas 
