@@ -25,3 +25,22 @@ Como en la gran mayoría de aplicaciones, puede haber una serie de falencias, qu
 - Desplegabilidad: arranque lento del sistema, pues hay muchos módulos de arranque involucrados, lo que resulta en un largo período de arranque del sistema.
 - Escalabilidad: La escalabilidad es compleja, ya que está supeditada a una infraestructura rígida que depende de un conjunto de recursos finito, por lo que el suponer un crecimiento para la aplicación no sería tarea fácil por todas las variables que se involucran y su ensamble tan riguroso.
 
+### Límites de su aplicación
+
+El sistema diseñado y creado, tiene muchas falencias, las cuales tan siquiera se puede contabilizar, pues aunque se realizaron algunos de los features que se requerían, estos no fueron realizados a cabalidad, por lo que hablar sobre métricas que impliquen cuántos usuarios concurrentes máximos soporta la aplicación, o bien, mediciones sobre el tiempo de respuesta en las consultas antes de que se tarden al saturar la base de datos y conocer cuánto es el máximo de datos, fueron imposibles para el presente documento, por lo que mostrar algún aproximado o un dato sería algo muy alejado de la realidad. 
+
+### Plan de mejora
+
+Como se mencionó anteriormente en este documento, la arquitectura escogida para los nuevos planes del sistema es una basada en microservicios, la cual tiene tanto sus ventajas como desventajas que mencionaremos a continuación:
+```
+## Ventajas
+    - Modularidad: al tratarse de servicios autónomos, se pueden desarrollar y desplegar de forma independiente.  Además, un error en un servicio no debería afectar la capacidad de otros servicios para seguir trabajando según lo previsto.
+    - Escalabilidad: como es una aplicación modular, se puede escalar horizontalmente cada parte según sea necesario, aumentando el escalado de los módulos que tengan un procesamiento más intensivo.
+    - Versatilidad: se pueden usar diferentes tecnologías y lenguajes de programación, lo que permite adaptar cada funcionalidad a la tecnología más adecuada y rentable.
+    - Rapidez de actuación: el reducido tamaño de los microservicios permite un desarrollo menos costoso, así como el uso de “contenedores de software”, como Docker, permitiendo que el despliegue de la aplicación se pueda llevar a cabo rápidamente.
+    Mantenimiento simple y barato: al poder hacerse mejoras de un solo módulo y no tener que intervenir en toda la estructura, el mantenimiento es más sencillo y barato.
+    - Agilidad: se pueden utilizar funcionalidades típicas (autenticación, trazabilidad, etc.) que ya han sido desarrolladas por terceros, por lo que no hace falta o no es necesario que se tengan que crear, un ejemplo de ello para este proyecto es el uso de dashboard para presentar estadísticas.
+```
+
+
+
