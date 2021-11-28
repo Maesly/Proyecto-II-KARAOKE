@@ -89,6 +89,8 @@ Para esta nueva actualización de la aplicación, se decide colocar en la inform
 ### Estadísticas
 Cómo parte de los nuevos elementos contemplados para la versión 2.0 de karaoke, se añaden estadísticas propias de cada usuario a su perfil con el fin de mostrarle su desempeño y demás información en la aplicación. En el fin u objetivo de realizar dicho feature es mostrarle al usuario de una manera sencilla, compacta y agradable las estadísticas sobre sus canciones favoritas, así como de sus artistas favoritos, y también de aquellas palabras más difíciles de pronunciar para el usuario en un top 10 mostrado por medio de un Dashboard.
 
-
+100. First list item
+     - First nested list item
+       - Second nested list item
 
 
