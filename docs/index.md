@@ -45,7 +45,7 @@ Como se mencionó anteriormente en este documento, la arquitectura escogida para
 ``` markdown
 - Alto consumo de memoria: al tener cada microservicio sus propios recursos y bases de datos, consumen más memoria y CPU.
 - Inversión de tiempo inicial: al crear la arquitectura, se necesita más tiempo para poder fragmentar los distintos microservicios e implementar la comunicación entre ellos.
--Complejidad en la gestión: si contamos con un gran número de microservicios, será más complicado controlar la gestión e integración de estos, por lo que resulta necesario disponer de una centralización de trazas y herramientas avanzadas de procesamiento de información que permitan tener una visión general de todos los microservicios y orquesten el sistema.
+- Complejidad en la gestión: si contamos con un gran número de microservicios, será más complicado controlar la gestión e integración de estos, por lo que resulta necesario disponer de una centralización de trazas y herramientas avanzadas de procesamiento de información que permitan tener una visión general de todos los microservicios y orquesten el sistema.
 - No uniformidad: aunque disponer de un equipo tecnológico diferente para cada uno de los servicios tiene sus ventajas, si no se gestiona correctamente, conducirá a un diseño y arquitectura de aplicación poco uniforme.
 - Dificultad en la realización de pruebas: debido a que los componentes de la aplicación están distribuidos, las pruebas y test globales son más complicados de realizar.
 - Coste de implantación alto: una arquitectura de microservicios puede suponer un alto coste de implantación debido a costes de infraestructura y pruebas distribuidas.
@@ -55,38 +55,38 @@ Como parte de los cambios que se quieren realizar, se tiene que realizar un tipo
 
 1. Iteración 1
   - Como gerente, quiero que la información del sistema se encuentre en la nube
-     - Migrar la información de los usuarios 
-     - Migrar la información de las canciones
+    - Migrar la información de los usuarios 
+    - Migrar la información de las canciones
 2. Iteración 2
   - Como usuario, quiero poder obtener una calificación de la canción que cante
-     - Mostrar la letra de la canción
-     - Grabar la voz del usuario cantando
-     - Parsear la grabación a un archivo de texto mediante el uso de un API 
-     - Comparar lo cantado con la letra
-     - Crear una métrica para obtener una puntuación
-     - Mostrar la puntuación obtenida 
+    - Mostrar la letra de la canción
+    - Grabar la voz del usuario cantando
+    - Parsear la grabación a un archivo de texto mediante el uso de un API 
+    - Comparar lo cantado con la letra
+    - Crear una métrica para obtener una puntuación
+    - Mostrar la puntuación obtenida 
 3. Iteración 3
   - Como usuario, quiero poder observar información del artista o grupo 
-     - Obtener información del artista mediante un API 
-     - Ordenar y filtrar la información del artista
-     - Desplegar la información obtenida mientras se reproduce la canción
+    - Obtener información del artista mediante un API 
+    - Ordenar y filtrar la información del artista
+    - Desplegar la información obtenida mientras se reproduce la canción
 4. Iteración 4
   - Como usuario, quiero poder observar estadísticas sobre mi cuenta 
-     - Desplegar la información del usuario 
-     - Filtrar canciones reproducidas por el usuario
-     - Mostrar lista de las canciones reproducidas 
-     - Mostrar artistas favoritos
-     - Hacer un recuento de las palabras con mayor y menor dificultad 
-     - Mostrar el recuento de las palabras 
+    - Desplegar la información del usuario 
+    - Filtrar canciones reproducidas por el usuario
+    - Mostrar lista de las canciones reproducidas 
+    - Mostrar artistas favoritos
+    - Hacer un recuento de las palabras con mayor y menor dificultad 
+    - Mostrar el recuento de las palabras 
 
-### Nuevos features
+## Nuevos features
 
 Una vez determinadas las debilidades del sistema de karaoke y generado el plan estratégico para mejorar las mismas, se determina que aprovechando la nueva versión se añadirán algunas características más con el fin de proporcionar una mejor experiencia en la página web, y a su vez enriquecer el sistema con más posibilidades para los usuarios. Las características que se pretende añadir son las siguientes:
-## Puntuación
+### Puntuación
 La finalidad de un Karaoke es divertirse durante el transcurso de la canción, sin embargo también es importante para el usuario saber que tal lo hizo o qué tanto porcentaje de la letra pudo cantar correctamente. Es por esto por lo que para proporcionarle una mejor experiencia al usuario con la aplicación de Karaoke se decide añadir una estadística para puntuar o calificar cuál fue su desempeño del usuario en el karaoke. Más precisamente, en cuanto a implementación, el equipo decide hacer uso de un microservicio siguiendo la línea del plan de mejora que sea capaz de proporcionar una puntuación al usuario acerca de cuántas coincidencias hace con respecto a la letra original de la canción seleccionada.
-## Información del artista
+### Información del artista
 Para esta nueva actualización de la aplicación, se decide colocar en la información acerca del artista de manera accesible para el usuario. Esto se añade como una nueva característica debido a que en algunos casos el usuario canta la canción y no sabe la información acerca del artista, entonces debe buscar dicha información fuera de aplicación, es por esto por lo que se le adjunta dicha información como un plus a la aplicación para lograrla hacer mucho más atractiva para el usuario.
-## Estadísticas
+### Estadísticas
 Cómo parte de los nuevos elementos contemplados para la versión 2.0 de karaoke, se añaden estadísticas propias de cada usuario a su perfil con el fin de mostrarle su desempeño y demás información en la aplicación. En el fin u objetivo de realizar dicho feature es mostrarle al usuario de una manera sencilla, compacta y agradable las estadísticas sobre sus canciones favoritas, así como de sus artistas favoritos, y también de aquellas palabras más difíciles de pronunciar para el usuario en un top 10 mostrado por medio de un Dashboard.
 
 
